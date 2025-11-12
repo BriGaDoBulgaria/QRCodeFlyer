@@ -936,6 +936,7 @@ p {
   width: 20%;
   height: 25%;
   max-height: 300px;
+  min-height: 300px;
   text-align: center;
 }
 
@@ -1110,9 +1111,9 @@ p {
 
 
 .advantage-text  {
-  margin-top: 35%;
-  font-size: 2rem;
-  padding-bottom: 25px;
+  margin-top: 15%;
+  font-size: 1.4rem;
+  padding-bottom: 15px;
   width: 100%;
 }
 
@@ -1126,7 +1127,7 @@ p {
 
 @media (max-width: 1440px){
   .advantage-text {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
