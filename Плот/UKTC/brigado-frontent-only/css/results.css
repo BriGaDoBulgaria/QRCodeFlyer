@@ -1,0 +1,157 @@
+/* Основен контейнер */
+#selection {
+  padding: 20px;
+  background: linear-gradient(to right, rgb(5, 90, 48), rgb(5, 90, 69), rgb(7, 168, 168));
+  overflow-x: auto; /* ако няма място — хоризонтален скрол */
+  white-space: nowrap;
+}
+
+/* Контейнер за критериите */
+#selection .container-fluid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* 🚫 без прехвърляне */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Всеки критерий */
+#selection .criterion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+/* Изображения */
+#selection .criterion-item img {
+  width: 96px;
+  height: 96px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* Текст за критерия */
+#selection .criterion {
+  font-size: 1.2em;
+  color: white;
+  margin: 0;
+  transition: font-size 0.3s ease;
+}
+
+/* ——————————————————————— */
+/* 🔽 Breakpoints за по-малки екрани */
+/* ——————————————————————— */
+
+/* до 1200px — леко смаляване */
+@media (max-width: 1200px) {
+  #selection .criterion-item img {
+    width: 80px;
+    height: 80px;
+  }
+  #selection .criterion {
+    font-size: 1.1em;
+  }
+  #selection .container-fluid {
+    gap: 25px;
+  }
+}
+
+/* до 992px — стандартен таблет */
+@media (max-width: 992px) {
+  #selection .criterion-item img {
+    width: 64px;
+    height: 64px;
+  }
+  #selection .criterion {
+    font-size: 1em;
+  }
+  #selection .container-fluid {
+    gap: 20px;
+  }
+}
+
+/* до 768px — телефон в хоризонтален режим */
+@media (max-width: 768px) {
+  #selection .criterion-item img {
+    width: 48px;
+    height: 48px;
+  }
+  #selection .criterion {
+    font-size: 0.9em;
+  }
+  #selection .container-fluid {
+    gap: 15px;
+  }
+  #selection {
+    padding: 15px;
+  }
+}
+
+/* до 576px — стандартен телефон */
+@media (max-width: 576px) {
+  #selection .criterion-item img {
+    width: 40px;
+    height: 40px;
+  }
+  #selection .criterion {
+    font-size: 0.8em;
+  }
+  #selection .container-fluid {
+    gap: 10px;
+  }
+  #selection {
+    padding: 10px;
+  }
+}
+
+/* до 400px — мини телефони (SE, Fold и др.) */
+@media (max-width: 400px) {
+  #selection .criterion-item img {
+    width: 32px;
+    height: 32px;
+  }
+  #selection .criterion {
+    font-size: 0.7em;
+  }
+  #selection .container-fluid {
+    gap: 8px;
+  }
+}
+
+/* ——————————————————————— */
+/* Допълнителни стилове */
+/* ——————————————————————— */
+
+.see-more button {
+  border-style: none;
+  background-color: #980405;
+  color: white !important;
+  margin: 10px;
+  z-index: 30;
+  transition: background-color 0.3s ease;
+}
+
+.see-more button:hover {
+  background-color: #b30a0a !important;
+}
+
+.see-more-nav {
+  width: 100%;
+  background: linear-gradient(to right, rgb(5, 90, 48), rgb(5, 90, 69), rgb(7, 168, 168));
+  margin-top: -70px;
+  margin-bottom: 100px !important;
+}
+
+#job-title {
+  background: linear-gradient(to right, rgb(5, 90, 48), rgb(5, 90, 69), rgb(7, 168, 168));
+}
+
+#job-title p {
+  margin-bottom: -20px !important;
+}
