@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BriGaDo</title>
+  <style>
+    body {
+      background-color: #ffff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    .logo-container {
+      max-width: 180px;
+      margin: 50px auto 20px auto;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .social-section {
+      margin-top: 40px;
+    }
+
+    .social-heading {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .social-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      justify-content: center;
+      gap: 20px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .icon-button {
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .icon-button:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .icon-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+
+    @media screen and (max-width: 500px) {
+      .social-buttons {
+        grid-template-columns: repeat(2, 60px);
+      }
+    }
+
+
+    .survey-description {
+      font-size: 1.1em;
+      color: #333;
+      background: #f9f9f9;
+      padding: 20px 15px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      line-height: 1.5;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+    }
+
+    .survey-description p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    .survey-description h2 {
+      font-size: 1.3em;
+      color: #074f28;
+      margin-bottom: 15px;
+    }
+
+    .survey-links {
+      margin-top: 20px;
+    }
+
+    .survey-button {
+      display: inline-block;
+      background-color:#074f28;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: background-color 0.3s, transform 0.2s ease;
+    }
+
+    .survey-button:hover {
+      background-color: #821915;
+      transform: scale(1.05);
+    }
+
+    
+    @media screen and (max-width: 500px) {
+      .survey-button {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="BriGaDo logo.svg" alt="BriGaDo Logo" />
+  </div>
+
+  <div class="social-section">
+    <div class="social-heading">Последвайте ни</div>
+
+    <div class="social-buttons">
+      <a href="https://www.linkedin.com/company/brigado-bulgaria/" target="_blank" class="icon-button">
+        <img src="LinkedIn_logo.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.instagram.com/bri_ga_doo/" target="_blank" class="icon-button">
+        <img src="IG logo svg.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/share/17KJUBvaQ6/" target="_blank" class="icon-button">
+        <img src="facebook-icon-lg.png" alt="Facebook" />
+      </a>
+      <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank" class="icon-button">
+        <img src="Tiktok_icon.svg.png" alt="TikTok" />
+      </a>
+    </div>
+  </div>
+
+  <div class="survey-description">
+    <h2>BriGaDo</h2>
+    <h3>Кадри за бизнеса, възможности за младите!</h3>
+    <p>BriGaDo има за цел да свързва работодатели с качествени и амбициозни кандидати и да улеснява намирането на работа, бригада или стаж. Споделете своето мнение и идеи, за да ни помогнете да направим платформата още по-полезна и удобна за всички.<p>
+  <div class="survey-links">
+    <a href="https://docs.google.com/forms/d/1mq90zPt8oWEg4tK2QbJPLOXI0rBGXhc7W7bDidRu178/edit" target="_blank" class="survey-button">Анкета за работодатели</a>
+    <a href="https://docs.google.com/forms/d/1QMWsGHyJqdPRlPMq6u0ikyxPznphXmzIBg8L8O3M2w4/edit" target="_blank" class="survey-button">Анкета за потребители</a>
+  
+  </div>
+
+</body>
+</html>
