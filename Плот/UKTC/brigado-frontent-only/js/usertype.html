@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BriGaDo - Избор на акаунт</title>
+    <style>
+        /* Основен стил за всички устройства */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            height: 100%;
+            background: linear-gradient(135deg, #e6f2ef, #f7f7f7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-registration {
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 420px;
+            transition: all 0.3s ease;
+        }
+
+        .background-account-type-chooser {
+            background: linear-gradient(135deg, #055a30, #07a8a8);
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            color: white;
+        }
+
+        .selection-box-label {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .account-type {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            background-color: #0b4f2a;
+        }
+
+        .account-type:hover {
+            background-color: #14522f;
+            transform: scale(1.03);
+        }
+
+        /* Малки екрани (телефони) */
+        @media (max-width: 768px) {
+            .background-account-type-chooser {
+                padding: 1.8rem;
+            }
+
+            .selection-box-label {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+
+            .account-type {
+                font-size: 1rem;
+                padding: 12px 0;
+                margin-bottom: 12px;
+            }
+
+            .card-registration {
+                width: 95%;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            }
+        }
+
+        /* Много малки екрани (напр. стари телефони) */
+        @media (max-width: 480px) {
+            .background-account-type-chooser {
+                padding: 1.5rem;
+            }
+
+            .selection-box-label {
+                font-size: 1.1rem;
+            }
+
+            .account-type {
+                font-size: 0.95rem;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-registration">
+        <div class="card-body background-account-type-chooser">
+            <span class="selection-box-label">ВИЕ СТЕ?</span>
+            <a href="https://forms.gle/FUaGbLnQWpKJkz6T9" class="account-type" id="user">Потребител</a>
+            <a href="employersignup-pc.html" class="account-type" id="employer">Работодател</a>
+            <a href="./institutionchooser.html" class="account-type" id="institution">Институция</a>
+        </div>
+    </div>
+
+    <script>
+        // Автоматично пренасочване при мобилни устройства
+        document.getElementById('user').addEventListener('click', function(e){
+            if(window.innerWidth <= 768){
+                e.preventDefault();
+                window.location.href = 'usersignup-mobile.html';
+            }
+        });
+
+        document.getElementById('employer').addEventListener('click', function(e){
+            if(window.innerWidth <= 768){
+                e.preventDefault();
+                window.location.href = 'employersignup-mobile.html';
+            }
+        });
+    </script>
+</body>
+</html>
