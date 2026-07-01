@@ -30,6 +30,8 @@ p {
     margin: 0 auto;
 }
 
+
+
 /* Page Layout */
 
 
@@ -161,6 +163,7 @@ p {
 .banner-image img {
   max-width: 300px;
   height: auto;
+  margin-bottom: 10px !important;
 }
 
 /* Responsive layout: Stack content vertically on narrow screens */
@@ -820,7 +823,7 @@ p {
   
 }
 
-.heading-how-we-are-doing-it p{
+.heading-how-we-are-doing-it p, .heading-how-we-are-doing-it a{
   font-size: 3rem;
   margin-top: 10px;
 }
